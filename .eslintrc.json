@@ -35,6 +35,7 @@
         "devDependencies": true
       }
     ],
+    "react/prop-types": 0,
     "react/function-component-definition": [
       2,
       {
