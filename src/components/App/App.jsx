@@ -1,5 +1,6 @@
+import Router from '../Router';
 import './App.module.css';
 
-const App = () => <p>Hello world!</p>;
+const App = () => <Router />;
 
 export default App;
