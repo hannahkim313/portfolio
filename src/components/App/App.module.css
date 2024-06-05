@@ -2,6 +2,10 @@
 /* Inspired by: https://www.joshwcomeau.com/css/custom-css-reset/
 /******************************************************************************/
 
+:root {
+  --color-text: black;
+}
+
 *,
 *::before,
 *::after {
@@ -20,7 +24,7 @@ body {
 
 body {
   color: var(--color-text);
-  font-family: "Inter", "Open Sans", "Source Sans 3", sans-serif;
+  font-family: 'Inter', 'Open Sans', 'Source Sans 3', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }

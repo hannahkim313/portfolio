@@ -1,5 +1,5 @@
 import './App.module.css';
 
-const App = () => <p>Hello world!</p>
+const App = () => <p>Hello world!</p>;
 
-export default App
+export default App;
