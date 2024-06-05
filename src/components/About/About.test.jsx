@@ -1,15 +1,31 @@
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../utils/test-utils';
+import About from './About';
+
 describe('rendered elements of the About component', () => {
-  it('renders the title', () => {});
+  it('renders the title', () => {
+    renderWithRouter(<About />);
+
+    expect(screen.getByRole('heading', { level: 2, name: /About/i }));
+  });
 
   it('renders the subheading', () => {
-    // test
+    renderWithRouter(<About />);
+
+    expect(screen.getByRole('heading', { level: 3 })).toHaveClass(
+      /subheading/i
+    );
   });
 
   it('renders the description', () => {
-    // test
+    renderWithRouter(<About />);
+
+    expect(screen.getByRole('paragraph')).toBeInTheDocument();
   });
 
   it('renders the author image', () => {
-    // test
+    renderWithRouter(<About />);
+
+    expect(screen.getByRole('img', { name: /author/i }));
   });
 });
