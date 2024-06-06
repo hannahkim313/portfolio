@@ -1,31 +1,38 @@
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../utils/test-utils';
+import Header from './Header';
+
 describe('rendered elements of the Header component', () => {
   it('renders the site title', () => {
-    // test
+    renderWithRouter(<Header />);
+
+    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
   });
 
   it('renders the "About" nav link', () => {
-    // test
+    renderWithRouter(<Header />);
+
+    expect(screen.getByRole('link', { name: 'About' })).toHaveAttribute(
+      'href',
+      '/#about'
+    );
   });
 
   it('renders the "Projects" nav link', () => {
-    // test
+    renderWithRouter(<Header />);
+
+    expect(screen.getByRole('link', { name: 'Projects' })).toHaveAttribute(
+      'href',
+      '/#projects'
+    );
   });
 
   it('renders the "Contact" nav link', () => {
-    // test
-  });
-});
+    renderWithRouter(<Header />);
 
-describe('navigation of links', () => {
-  it('navigates to the "About" section when the nav link is clicked on', () => {
-    // test
-  });
-
-  it('navigates to the "Projects" section when the nav link is clicked on', () => {
-    // test
-  });
-
-  it('navigates to the "Contact" section when the nav link is clicked on', () => {
-    // test
+    expect(screen.getByRole('link', { name: 'Contact' })).toHaveAttribute(
+      'href',
+      '/#contact'
+    );
   });
 });
