@@ -12,7 +12,7 @@ const Router = () => {
       element: (
         <HomePage>
           <About />
-          <AllProjects />
+          <AllProjects>{/* TODO: Add Project components here */}</AllProjects>
           <Contact />
         </HomePage>
       ),
