@@ -19,7 +19,7 @@ const About = () => (
     <div>
       <img
         src="../src/assets/images/portrait-transparent.png"
-        alt="Digital illustration of the author. Please do not copy or redistribute without permission."
+        alt="Digital illustration of the author"
       />
     </div>
   </section>

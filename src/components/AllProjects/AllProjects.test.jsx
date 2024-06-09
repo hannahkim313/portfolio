@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import renderWithRouter from '../../utils/test-utils';
+import { renderWithRouter } from '../../utils/test-utils';
 import AllProjects from './AllProjects';
 import Project from '../Project/Project';
 
@@ -8,7 +8,7 @@ describe('rendered elements of the Projects component', () => {
     renderWithRouter(<AllProjects />);
 
     expect(
-      screen.getByRole('heading', { level: 2, name: /Projects/i })
+      screen.getByRole('heading', { level: 2, name: /projects/i })
     ).toBeInTheDocument();
   });
 

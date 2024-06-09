@@ -1,12 +1,12 @@
 import { screen } from '@testing-library/react';
-import renderWithRouter from '../../../utils/test-utils';
+import { renderWithRouter } from '../../../utils/test-utils';
 import Footer from './Footer';
 
 describe('rendered elements of the Footer component', () => {
   it('renders the site title', () => {
     renderWithRouter(<Footer />);
 
-    expect(screen.getByText(/Hannah Kim/i)).toBeInTheDocument();
+    expect(screen.getByText(/hannah kim/i)).toBeInTheDocument();
   });
 
   it('renders the "About" nav link', () => {

@@ -1,12 +1,12 @@
 import { screen } from '@testing-library/react';
-import renderWithRouter from '../../utils/test-utils';
+import { renderWithRouter } from '../../utils/test-utils';
 import About from './About';
 
 describe('rendered elements of the About component', () => {
   it('renders the title', () => {
     renderWithRouter(<About />);
 
-    expect(screen.getByRole('heading', { level: 2, name: /About/i }));
+    expect(screen.getByRole('heading', { level: 2, name: /about/i }));
   });
 
   it('renders the subheading', () => {

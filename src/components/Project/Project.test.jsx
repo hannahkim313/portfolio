@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import renderWithRouter from '../../utils/test-utils';
+import { renderWithRouter } from '../../utils/test-utils';
 import Project from './Project';
 
 const projectName = 'Test';
