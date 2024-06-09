@@ -1,21 +1,11 @@
+import { screen } from '@testing-library/react';
+import { renderWithRouter } from '../../utils/test-utils';
+import HomePage from './HomePage';
+
 describe('rendered elements of the HomePage component', () => {
-  it('renders the header', () => {
-    // test
-  });
+  it('renders the main <div> container', () => {
+    renderWithRouter(<HomePage />);
 
-  it('renders the "About" section', () => {
-    // test
-  });
-
-  it('renders the "Projects" section', () => {
-    // test
-  });
-
-  it('renders the "Contact" section', () => {
-    // test
-  });
-
-  it('render the footer', () => {
-    // test
+    expect(screen.getAllByRole('generic')[1]).toHaveClass(/mainContainer/i);
   });
 });
