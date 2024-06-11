@@ -5,7 +5,7 @@ import styles from './HomePage.module.css';
 const HomePage = ({ children }) => (
   <div className={styles.mainContainer}>
     <Header />
-    <main>{children}</main>
+    <main className={styles.mainHome}>{children}</main>
     <Footer />
   </div>
 );

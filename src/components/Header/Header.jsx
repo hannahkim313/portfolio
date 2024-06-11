@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
+import styles from './Header.module.css';
 
 const Header = () => (
   <header>
     <h1>Hannah Kim | JavaScript & React Front-End Web Developer</h1>
-    <nav>
+    <nav className={styles.navLinks}>
       <ul>
         <li>
           <Link to="/#about" reloadDocument>

@@ -1,0 +1,36 @@
+.contact {
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--text-gap);
+}
+
+.contact h2 {
+  font-size: 2rem;
+}
+
+.contact h3 {
+  font-size: 1.1rem;
+}
+
+.contact a {
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.contact img {
+  width: 2rem;
+}
+
+.socials {
+  padding: var(--text-gap);
+  display: flex;
+  gap: var(--text-gap);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contact a:hover {
+    background-color: var(--color-brand-1a);
+  }
+}

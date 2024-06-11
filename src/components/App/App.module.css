@@ -3,7 +3,18 @@
 /******************************************************************************/
 
 :root {
-  --color-text: black;
+  --color-text: #000000;
+  --color-brand-1: #f7e8d1;
+  --color-brand-1a: #dbcab2;
+  --color-brand-2: #aa6e41;
+  --color-brand-3: #71492b;
+  --color-brand-3a: #54371f;
+  --text-gap: 1rem;
+  --content-gap: 3rem;
+  --section-gap: 5rem;
+  --anchor-padding: 4px 12px;
+  --section-padding: 2rem;
+  --border-radius-rounded-corners: 0.5rem;
 }
 
 *,

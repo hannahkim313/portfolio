@@ -1,0 +1,41 @@
+.mainError {
+  height: 100%;
+  background-color: var(--color-brand-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--text-gap);
+}
+
+.error h1 {
+  font-size: 2rem;
+}
+
+.error a {
+  font-weight: bold;
+  color: white;
+  padding: var(--anchor-padding);
+  background-color: var(--color-brand-3a);
+  border-radius: var(--border-radius-rounded-corners);
+}
+
+.errorImg {
+  width: 300px;
+}
+
+.hidden {
+  position: absolute;
+  left: -999999999px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .error a:hover {
+    background-color: var(--color-brand-3);
+  }
+}

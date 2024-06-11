@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
+import styles from './Footer.module.css';
 
 const Footer = () => (
   <footer>
     <p>Hannah Kim | JavaScript & React Front-End Web Developer</p>
-    <nav>
+    <nav className={styles.navLinks}>
       <ul>
         <li>
           <Link to="/#about" reloadDocument>

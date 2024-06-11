@@ -1,0 +1,31 @@
+.allProjects {
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-gap);
+}
+
+.allProjects h2 {
+  font-size: 2rem;
+}
+
+.allProjects h3 {
+  font-size: 1.1rem;
+}
+
+.callOut {
+  text-align: center;
+}
+
+.divider {
+  width: 300px;
+  height: 1px;
+  background-color: black;
+  align-self: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .callOut a:hover {
+    text-decoration: underline;
+  }
+}
