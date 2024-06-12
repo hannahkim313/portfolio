@@ -8,7 +8,7 @@ const AllProjects = ({ children }) => (
         From browser games to innovative applications, these projects showcase
         my growth in both visual and technical front-end development.
       </h3>
-      {children}
+      <div className={styles.projectsContainer}>{children}</div>
       <p className={styles.callOut}>
         Interested in seeing more of my work? Check out my{' '}
         <a href="https://github.com/hannahkim313">

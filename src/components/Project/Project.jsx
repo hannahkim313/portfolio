@@ -8,8 +8,9 @@ const Project = ({
   demoLink,
   repoLink,
   projectImgSrc,
-}) => (
-  <article>
+  isInverted = false,
+}) => {
+  const info = (
     <div className={styles.info}>
       <h4>{projectName}</h4>
       <p>{description}</p>
@@ -29,8 +30,18 @@ const Project = ({
         <a href={repoLink}>GitHub Repo</a>
       </div>
     </div>
-    <img src={projectImgSrc} alt="" />
-  </article>
-);
+  );
+
+  const image = (
+    <img className={styles.projectImg} src={projectImgSrc} alt="" />
+  );
+
+  return (
+    <article className={styles.project}>
+      {isInverted ? image : info}
+      {isInverted ? info : image}
+    </article>
+  );
+};
 
 export default Project;

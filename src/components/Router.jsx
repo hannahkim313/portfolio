@@ -32,7 +32,7 @@ const Router = () => {
             />
             <Project
               projectName="Animal Crossing Memory Card Game"
-              description="A simple memory card game using the Nintendo Amiibo API. With a focus on key React concepts, this project demonstrates how to manage state, hooks, and side effects."
+              description="A simple memory card game using the AmiiboAPI. With a focus on key React concepts, this project demonstrates how to manage state, hooks, and side effects."
               concepts={[
                 'React',
                 'State and Effects',
@@ -42,16 +42,17 @@ const Router = () => {
               demoLink="https://memory-card-ehz.pages.dev/"
               repoLink="https://github.com/hannahkim313/memory-card"
               projectImgSrc="../src/assets/images/project-memory-card.png"
+              isInverted
             />
             <Project
               projectName="Battleship"
-              description="A browser implementation of the classic game Battleship. Without the use of any frameworks, this JavaScript-based game highlights the importance of TDD during the developmental process."
+              description="A browser implementation of the classic game Battleship. Without the use of any frameworks, this JavaScript-based game highlights the importance of understanding programming fundamentals and the benefits of implementing a TDD-based environment during the developmental process."
               concepts={[
                 'HTML',
                 'CSS',
                 'JavaScript',
                 'Webpack',
-                'Factories',
+                'Factory Functions',
                 'Test-Driven Development (TDD)',
                 'Jest',
               ]}
