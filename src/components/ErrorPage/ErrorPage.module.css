@@ -20,7 +20,7 @@
 .error a {
   font-weight: bold;
   color: white;
-  padding: var(--anchor-padding);
+  padding: var(--text-padding-small);
   background-color: var(--color-brand-3a);
   border-radius: var(--border-radius-rounded-corners);
 }

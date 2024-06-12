@@ -1,0 +1,57 @@
+.project {
+  display: flex;
+  gap: var(--content-gap);
+}
+
+.project h4 {
+  text-decoration: underline;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-gap);
+}
+
+.iconTextWrapper {
+  font-weight: bold;
+  display: flex;
+  gap: calc(var(--text-gap) / 2);
+}
+
+.concepts {
+  display: flex;
+  gap: var(--text-gap);
+  flex-wrap: wrap;
+}
+
+.concept {
+  padding: var(--text-padding-small);
+  background-color: var(--color-brand-1a);
+  border-radius: var(--border-radius-rounded-corners);
+}
+
+.links {
+  display: flex;
+  gap: var(--text-gap);
+}
+
+.links a {
+  color: white;
+  padding: var(--text-padding-small);
+  background-color: var(--color-brand-3a);
+  border-radius: var(--border-radius-rounded-corners);
+}
+
+.projectImg {
+  height: 300px;
+  border-radius: var(--border-radius-rounded-corners);
+  background-color: var(--color-brand-1a);
+  padding: 1rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .links a:hover {
+    background-color: var(--color-brand-3);
+  }
+}

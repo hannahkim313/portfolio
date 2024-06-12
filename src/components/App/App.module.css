@@ -2,6 +2,9 @@
 /* Inspired by: https://www.joshwcomeau.com/css/custom-css-reset/
 /******************************************************************************/
 
+/* TODO: Add mobile responsiveness */
+/* TODO: Add focus states */
+
 :root {
   --color-text: #000000;
   --color-brand-1: #f7e8d1;
@@ -12,7 +15,7 @@
   --text-gap: 1rem;
   --content-gap: 3rem;
   --section-gap: 5rem;
-  --anchor-padding: 4px 12px;
+  --text-padding-small: 4px 12px;
   --section-padding: 2rem;
   --border-radius-rounded-corners: 0.5rem;
 }
