@@ -19,6 +19,11 @@
   border-radius: 100%;
 }
 
+.contact a:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
+
 .contact img {
   width: 2rem;
 }

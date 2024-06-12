@@ -15,6 +15,12 @@ footer .navLinks ul {
   gap: var(--text-gap);
 }
 
+footer a:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+  border-radius: var(--border-radius-rounded-corners);
+}
+
 @media (hover: hover) and (pointer: fine) {
   footer a:hover {
     text-decoration: underline;

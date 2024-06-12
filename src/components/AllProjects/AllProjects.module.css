@@ -28,6 +28,11 @@
   border-radius: var(--border-radius-rounded-corners);
 }
 
+.callOut a:focus-visible {
+  outline: var(--focus-outline);
+  border-radius: var(--border-radius-rounded-corners);
+}
+
 .divider {
   width: 300px;
   height: 1px;

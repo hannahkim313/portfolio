@@ -43,6 +43,10 @@
   border-radius: var(--border-radius-rounded-corners);
 }
 
+.links a:focus-visible {
+  outline-offset: var(--focus-outline-offset);
+}
+
 .projectImg {
   height: 300px;
   border-radius: var(--border-radius-rounded-corners);

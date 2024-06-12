@@ -3,7 +3,6 @@
 /******************************************************************************/
 
 /* TODO: Add mobile responsiveness */
-/* TODO: Add focus states */
 
 :root {
   --color-text: #000000;
@@ -18,6 +17,8 @@
   --text-padding-small: 4px 12px;
   --section-padding: 2rem;
   --border-radius-rounded-corners: 0.5rem;
+  --focus-outline: 2px solid var(--color-text);
+  --focus-outline-offset: 4px;
 }
 
 *,
