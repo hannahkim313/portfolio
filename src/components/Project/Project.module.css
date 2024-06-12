@@ -48,7 +48,6 @@
 }
 
 .projectImg {
-  height: 300px;
   border-radius: var(--border-radius-rounded-corners);
   background-color: var(--color-brand-1a);
   padding: 1rem;
@@ -57,5 +56,30 @@
 @media (hover: hover) and (pointer: fine) {
   .links a:hover {
     background-color: var(--color-brand-3);
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project.inverted {
+    flex-direction: column-reverse;
+  }
+
+  .projectImg {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .project,
+  .project.inverted {
+    flex-direction: row;
+  }
+
+  .projectImg {
+    height: 300px;
   }
 }

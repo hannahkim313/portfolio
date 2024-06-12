@@ -37,7 +37,9 @@ const Project = ({
   );
 
   return (
-    <article className={styles.project}>
+    <article
+      className={`${styles.project} ${isInverted ? styles.inverted : ''}`}
+    >
       {isInverted ? image : info}
       {isInverted ? info : image}
     </article>

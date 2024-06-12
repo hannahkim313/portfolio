@@ -1,4 +1,5 @@
 .contact {
+  text-align: center;
   padding: var(--section-padding);
   display: flex;
   flex-direction: column;

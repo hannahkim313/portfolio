@@ -3,7 +3,6 @@ header {
   background-color: var(--color-brand-1a);
   grid-row: 1 / 2;
   display: flex;
-  justify-content: space-between;
 }
 
 h1 {
@@ -24,5 +23,21 @@ header a:focus-visible {
 @media (hover: hover) and (pointer: fine) {
   header a:hover {
     text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  header {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--text-gap);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
