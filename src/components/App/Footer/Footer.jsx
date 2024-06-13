@@ -7,6 +7,11 @@ const Footer = () => (
     <nav className={styles.navLinks}>
       <ul>
         <li>
+          <Link to="/" reloadDocument>
+            Home
+          </Link>
+        </li>
+        <li>
           <Link to="/#about" reloadDocument>
             About
           </Link>
