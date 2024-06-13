@@ -1,3 +1,5 @@
+import gitHubImgSrc from '../../assets/images/github.svg';
+import mailImgSrc from '../../assets/images/mail.svg';
 import styles from './Contact.module.css';
 
 const Contact = () => (
@@ -8,10 +10,10 @@ const Contact = () => (
     </h3>
     <div className={styles.socials}>
       <a href="https://github.com/hannahkim313">
-        <img src="../src/assets/images/github.svg" alt="GitHub" />
+        <img src={gitHubImgSrc} alt="GitHub" />
       </a>
       <a href="mailto:devhkim13@gmail.com">
-        <img src="../src/assets/images/mail.svg" alt="Email" />
+        <img src={mailImgSrc} alt="Email" />
       </a>
     </div>
   </section>

@@ -1,3 +1,4 @@
+import portraitImgSrc from '../../assets/images/portrait-transparent.png';
 import styles from './About.module.css';
 
 const About = () => (
@@ -34,7 +35,7 @@ const About = () => (
       </div>
       <img
         className={styles.authorImg}
-        src="../src/assets/images/portrait-transparent.png"
+        src={portraitImgSrc}
         alt="Digital illustration of the author"
       />
     </section>

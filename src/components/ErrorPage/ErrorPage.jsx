@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import errorImgSrc from '../../assets/images/404.png';
 import styles from './ErrorPage.module.css';
 
 const Error = () => (
@@ -7,7 +8,7 @@ const Error = () => (
       <h1 className={styles.hidden}>404</h1>
       <img
         className={styles.errorImg}
-        src="../src/assets/images/404.png"
+        src={errorImgSrc}
         alt="404: Page not found"
       />
       <p>Uh-oh! Looks like you hit a dead end.</p>

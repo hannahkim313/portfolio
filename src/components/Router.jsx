@@ -1,4 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import shoppingCartImgSrc from '../assets/images/project-shopping-cart.png';
+import memoryCardImgSrc from '../assets/images/project-memory-card.png';
+import battleshipImgSrc from '../assets/images/project-battleship.png';
 import HomePage from './HomePage/HomePage';
 import About from './About/About';
 import AllProjects from './AllProjects/AllProjects';
@@ -28,7 +31,7 @@ const Router = () => {
               ]}
               demoLink="https://shopping-cart-c0j.pages.dev/"
               repoLink="https://github.com/hannahkim313/shopping-cart"
-              projectImgSrc="../src/assets/images/project-shopping-cart.png"
+              projectImgSrc={shoppingCartImgSrc}
             />
             <Project
               projectName="Animal Crossing Memory Card Game"
@@ -41,7 +44,7 @@ const Router = () => {
               ]}
               demoLink="https://memory-card-ehz.pages.dev/"
               repoLink="https://github.com/hannahkim313/memory-card"
-              projectImgSrc="../src/assets/images/project-memory-card.png"
+              projectImgSrc={memoryCardImgSrc}
               isInverted
             />
             <Project
@@ -58,7 +61,7 @@ const Router = () => {
               ]}
               demoLink="https://hannahkim313.github.io/battleship/"
               repoLink="https://github.com/hannahkim313/battleship"
-              projectImgSrc="../src/assets/images/project-battleship.png"
+              projectImgSrc={battleshipImgSrc}
             />
           </AllProjects>
           <Contact />

@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import codeImgSrc from '../../assets/images/code.svg';
 import styles from './Project.module.css';
 
 const Project = ({
@@ -15,7 +16,7 @@ const Project = ({
       <h4>{projectName}</h4>
       <p>{description}</p>
       <div className={styles.iconTextWrapper}>
-        <img src="../src/assets/images/code.svg" alt="" />
+        <img src={codeImgSrc} alt="" />
         <p>Technical concepts</p>
       </div>
       <div className={styles.concepts}>
