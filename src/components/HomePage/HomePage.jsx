@@ -1,4 +1,4 @@
-import Footer from '../App/Footer/Footer';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import styles from './HomePage.module.css';
 
