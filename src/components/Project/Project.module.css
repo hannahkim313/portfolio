@@ -13,10 +13,9 @@
   gap: var(--text-gap);
 }
 
-.iconTextWrapper {
-  font-weight: bold;
-  display: flex;
-  gap: calc(var(--text-gap) / 2);
+.achievement {
+  list-style: disc;
+  margin-left: var(--text-gap);
 }
 
 .concepts {

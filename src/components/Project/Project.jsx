@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
-import codeImgSrc from '../../assets/images/code.svg';
 import styles from './Project.module.css';
 
 const Project = ({
   projectName,
   description,
+  achievements = [],
   concepts = [],
   demoLink,
   repoLink,
@@ -15,17 +15,26 @@ const Project = ({
     <div className={styles.info}>
       <h4>{projectName}</h4>
       <p>{description}</p>
-      <div className={styles.iconTextWrapper}>
-        <img src={codeImgSrc} alt="" />
-        <p>Technical concepts</p>
-      </div>
-      <div className={styles.concepts}>
-        {concepts.map((concept) => (
-          <p key={uuidv4()} className={styles.concept}>
-            {concept}
-          </p>
+      <p>
+        <strong>Achievements:</strong>
+      </p>
+      <ul>
+        {achievements.map((achievement) => (
+          <li key={uuidv4()} className={styles.achievement}>
+            {achievement}
+          </li>
         ))}
-      </div>
+      </ul>
+      <p>
+        <strong>Technical concepts:</strong>
+      </p>
+      <ul className={styles.concepts}>
+        {concepts.map((concept) => (
+          <li key={uuidv4()} className={styles.concept}>
+            {concept}
+          </li>
+        ))}
+      </ul>
       <div className={styles.links}>
         <a href={demoLink}>Live Demo</a>
         <a href={repoLink}>GitHub Repo</a>
