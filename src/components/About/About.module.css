@@ -31,6 +31,18 @@
   gap: var(--text-gap);
 }
 
+.skills {
+  display: flex;
+  gap: var(--text-gap);
+  flex-wrap: wrap;
+}
+
+.skills li {
+  padding: var(--text-padding-small);
+  background-color: var(--color-brand-1a);
+  border-radius: var(--border-radius-rounded-corners);
+}
+
 .authorImg {
   background-color: var(--color-brand-2);
   border-radius: 100%;
